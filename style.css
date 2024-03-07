@@ -1,0 +1,686 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.container{
+    padding: 10px;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+/* Styling for logo */
+.logo {
+    font-size: 24px;
+    margin-left: 30px 30px;
+}
+
+/* Styling for nav menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.nav-menu li {
+    margin-left: 35px;
+    text-align: center;
+}
+
+.nav-menu li a {
+    color: hsl(229, 31%, 21%);
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+}
+
+.nav-menu li a i{
+    margin-left: 5px;
+}
+
+/* Styling for buttons */
+.btn {
+    margin-left: 10px;
+    padding: 15px 30px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Epilogue";
+    font-size: 18px;
+}
+
+.blue-btn{
+    margin-left: 0;
+    background-color: hsl(231, 69%, 60%);
+}
+
+.gray-btn{
+    background-color: hsl(229, 8%, 60%);
+}
+
+/* Styling for hamburger menu icon */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: hsl(0, 0%, 8%);
+    margin: 3px 0;
+}
+
+/* Styling for side navbar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 60px;
+    transition: 0.5s;
+    display: none;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: hsl(0, 0%, 41%);
+    display: block;
+}
+
+.sidenav a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.hero-text {
+    margin-right: 50px; 
+    padding: 10px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: hsl(229, 31%, 21%);
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: hsl(229, 8%, 60%);
+}
+
+.hero-image img {
+    max-width: 70%;
+    margin-left: 60px;
+}
+
+.hero-image >img {
+    width: auto;
+    justify-self: start;
+    align-self: center;
+    background: url(images);
+    background-repeat: no-repeat;
+    background-size: 100% 89%;
+    max-width: 700px;
+    z-index: 1;
+}
+
+/* Features Styling */
+.features-section {
+    text-align: center;
+    justify-content: space-around;
+    width: auto;
+}
+
+.features-text {
+    margin-bottom: 50px;
+}
+
+.features-text h2{
+    font-size: 30px;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 30px;
+}
+
+.features-text p{
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-button {
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.toggle-button.active {
+    border-color: hsl(0, 94%, 66%); 
+    color: hsl(229, 31%, 21%);
+}
+
+.toggle-button.default{
+    border-bottom: 1px solid hsl(0, 0%, 41%);
+    color: hsl(229, 8%, 60%);
+}
+
+.features-bookmarking {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.bookmarking-text {
+    margin-left: 50px; 
+    padding: 10px;
+    text-align: left;
+}
+
+.bookmarking-text h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: hsl(229, 31%, 21%);
+}
+
+.bookmarking-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: hsl(229, 8%, 60%);
+}
+
+.bookmarking-image img {
+    /* max-width: 70%; */
+    margin-left: 60px;
+}
+
+/* Download Styling */
+.download-section {
+    text-align: center;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.download-text {
+    margin-bottom: 20px;
+}
+
+.download-text h2{
+    font-size: 30px;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 30px;
+}
+
+.download-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chrome-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px 20px;
+    height: fit-content; 
+}
+
+.firefox{
+    margin-top: 40px;
+}
+
+.opera{
+ margin-top: 80px;
+}
+
+.chrome-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.chrome-card h3 {
+    font-size: 18px;
+    color: hsl(229, 31%, 21%);
+    margin-top: 10px;
+}
+
+.chrome-card p {
+    font-size: 12px;
+    color: hsl(229, 8%, 60%);
+    margin-bottom: 20px;
+}
+
+.chrome-card hr {
+    border: none;
+    border-top: 1px dotted hsl(229, 8%, 60%); 
+    margin-top: 20px;
+}
+
+.chrome-card .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.chrome-card .btn {
+    background-color: hsl(231, 69%, 60%);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.chrome-card .btn:hover {
+    background-color: #3a4dbf;
+}
+
+/* Frequently Styling */
+.frequently-section {
+    text-align: center;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 50px;
+}
+
+.frequently-text {
+    margin-bottom: 20px;
+}
+
+.frequently-text h2{
+    font-size: 30px;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 30px;
+}
+
+.frequently-text p{
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-wrapper {
+    overflow: hidden;
+    width: 600px;
+    margin:0 auto;
+    margin-top: 50px;
+}
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child{
+    margin-bottom: 0;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    color: hsl(0, 0%, 8%);
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.accordion-label:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    text-align: left;
+    color: hsl(229, 8%, 60%);
+    font-size: 14px;
+    background: white;
+    transition: all 0.3s;
+}
+
+.accordion-content p{
+    margin: 0;
+    color: rgba(4,57,94,.7);
+    font-size: 18px;
+}
+
+input:checked + .accordion-label {
+    color: hsl(0, 94%, 66%);
+}
+
+input:checked + .accordion-label::after {
+    transform: rotate(90deg);
+}
+
+input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+.subscribe-section {
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px;
+    background-color: hsl(231, 69%, 60%);
+    width: 100%;
+}
+
+.subscribe-section h4 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.subscribe-form button {
+    background-color: hsl(0, 94%, 66%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-form button:hover {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+/* footer styles */
+.footer {
+    background-color: hsl(229, 31%, 21%); 
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px; 
+    height: auto;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.footer-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu ul li a {
+    color: hsl(0, 0%, 100%); 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+    color: hsl(0, 94%, 66%); 
+}
+
+.footer-social-media a {
+    color: hsl(0, 94%, 66%);
+    text-decoration: none;
+    margin-left: 10px; 
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        background-color: hsl(0, 0%, 98%);
+        top: 60px;
+        left: 0;
+        padding: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-menu li a {
+        display: block;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+
+    .hero-text {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .btn__none{
+        display: none;
+    }
+
+    .btn{
+        padding: 15px 30px;
+        color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Epilogue";
+        font-size: 16px; 
+    }
+
+    .features-bookmarking {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    .features-bookmarking img{
+        margin-left: 0;
+        margin-top: 50px;
+        max-width: 100%
+    }
+
+    .features-section {
+        padding: 30px;
+    }
+
+    .bookmarking-text {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .bookmarking-text p{
+        font-size: 14px;
+    }
+    
+
+    
+
+    .features-text h2,
+    .bookmarking-text h1,
+    .download-text h2,
+    .frequently-text h2 {
+        font-size: 24px;
+    }
+
+    .features-text p,
+    .bookmarking-text p,
+    .download-text p,
+    .frequently-text p {
+        font-size: 16px;
+    }
+
+    .toggle-buttons {
+        flex-direction: column;
+    }
+
+    .toggle-button {
+        margin: 10px 0;
+    }
+
+    .features-bookmarking,
+    .download-section,
+    .frequently-section {
+        padding: 20px;
+    }
+
+    .chrome-card {
+        max-width: 100%;
+    }
+
+    .accordion-wrapper {
+        overflow: hidden;
+        width: auto;
+        margin:0 auto;
+        margin-top: 50px;
+    }
+
+    .subscribe-section {
+        padding: 30px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 100%;
+    }
+
+    .footer-logo{
+        margin: 5px;
+    }
+    .footer-menu ul {
+        display: flex;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer-menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
